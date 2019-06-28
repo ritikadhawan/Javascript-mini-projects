@@ -1,0 +1,55 @@
+body{
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+}
+.container{
+  display: grid;
+  background-color: #158fa0;
+  width: 35rem;
+  height: 35rem;
+  max-width: 90vw;
+  max-height: 90vh;
+  grid-gap: 1% 1%;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(3,1fr);
+  margin: auto;
+
+}
+.container >div{
+  font-size: 500%;
+  box-sizing: border-box;
+  background-color: black;
+  padding-top: 30%;
+  color: white;
+  text-align: center;
+
+}
+.container>div i{
+  display: none;
+
+  color: red;
+}
+
+.container>div:hover{
+  transition: background-color 1s;
+  background-color: #7d7c7c;
+}
+
+/*responsive media tags*/
+@media screen and (max-width:750px)
+{
+  html{
+    font-size: 15px;
+  }
+
+}
+@media screen and (max-width:550px)
+{
+  html{
+    font-size: 12px;
+  }
+
+}
